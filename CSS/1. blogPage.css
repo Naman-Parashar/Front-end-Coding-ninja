@@ -1,0 +1,15 @@
+
+p{
+    color: green;
+}
+li{
+        color:dimgrey;
+}
+
+.he1,p{
+    text-transform: lowercase;
+}
+
+.font{
+    font-family: cursive ;
+}
