@@ -5,11 +5,16 @@ p{
 li{
         color:dimgrey;
 }
-
+h1:hover{
+    color: red;
+}
 .he1,p{
     text-transform: lowercase;
 }
 
 .font{
     font-family: cursive ;
+}
+p.n{
+    color: blue;
 }
