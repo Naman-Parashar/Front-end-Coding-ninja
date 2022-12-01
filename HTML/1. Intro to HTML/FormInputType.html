@@ -119,14 +119,14 @@
                 </article>
 
                 <section>
-                    <h3>Leave a reply</h3>
+                    <h2>Leave a reply</h2>
 
                     <div>
                         <p>Your email address will not be published. Required fields are marked <span>*</span></p>
 
                         <form>
                             <label for="comment">Comment <span>*</span></label>
-                            <input id="comment" type="text" required />
+                            <textarea name="comment" id="cd" cols="30" rows="10"></textarea>
                             <br/>
                             <label for="name">Name <span>*</span></label>
                             <input id="name" type="text" required />
@@ -135,7 +135,9 @@
                             <input id="email" type="email" required />
                             <br/>
                             <label for="website">Website</label>
-                            <input id="website" type="url" />
+                            <input id="website" type="url" /><br>
+
+                            <button>Post comment</button>
                         </form>
 
                     </div>

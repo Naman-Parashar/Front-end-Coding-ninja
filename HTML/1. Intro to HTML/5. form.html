@@ -10,8 +10,11 @@
 
 <body>
 
-
-    <form>
+<!-- action is where we want to send data.
+     method is how we want to send data.
+       http request : get(server to pc) or post(pc to server) there are other also 
+       when we use get then it add data to url which is not safe -->
+    <form action="" method="Get">
         <div>
             <label for="userN">UserName</label>
             <br>
@@ -31,7 +34,7 @@
         <div>
             <label for="mail">Email</label>
             <br>
-            <input type="email" id="mail"  placeholder="xyz@gmail.com">
+            <input type="email" id="mail"  placeholder="xyz@gmail.com" name="email" value="namn@gmail.com" disabled>
         </div>
         <div>
             <label for="rat">Rating</label>
@@ -41,6 +44,83 @@
         <div>
             <br>
             <input type="submit">
+        </div>
+
+        <div>
+            <label for="rb"> Gender</label><br>
+            <input type="radio" name="gender" id="rb" value="Female" checked> Female <br>
+            <input type="radio" name="gender" id="rb" value="Male"> Male <br>
+            <input type="radio" name="gender" id="rb" value="other"> other <br>
+            <!-- if we don't write name attribute the we can select all  as name sent data of form and all input has sane
+            name value so  name act like a variale and var can only have one value.
+        value atteibute set the default valuse now if we click on male then the value in male radio will we sent if
+    we don;t have name att then null will pass to the var name attrubute has.-->
+        </div>
+
+        <!-- checkbox can have multiple  -->
+        <div>
+            <br><br>
+            <label for="cb">Course</label><br>
+            <input type="checkbox" name="course" id="cb" value="c++" checked> C++ <br>
+            <input type="checkbox" name="course" id="cb" value="java"> Java <br>
+            <input type="checkbox" name="course" id="cb" value="Web"> Web development <br>
+        </div>
+
+        <div>
+            <br><br>
+            <label for="dd"> Multiplication selection</label><br>
+            <select name="month" id="dd" multiple> 
+                <option value="" selected>Select</option>
+                <option value="">JAN</option>
+                <option value="">FEB</option>
+                <option value="">MAR</option>
+                <option value="">APR</option>
+                <option value="">MAY</option>
+            </select>
+        </div>
+
+        <div>
+            <br><br>
+            <label for="dd2">single selection</label><br>
+            <select name="month" id="dd2">
+                <option value="" selected>Select</option>
+                <option value="j">JAN</option>
+                <option value="f">FEB</option>
+                <option value="m">MAR</option>
+                <option value="a">APR</option>
+                <option value="ma">MAY</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <br><br>
+            <textarea name="exp" id="ta" cols="30" rows="10">naman</textarea>
+        </div>
+
+        <div>
+            <br>
+            <input type="button" value="BUtton 1">
+            <!-- or -->
+            <br>
+            <button type="button">but 2</button>
+            <br>
+            <button type="reset">reset</button>
+            <button type="reset"><img src="" alt=""></button> 
+            <!-- difference bt button and input is that we  can use img as button -->
         </div>
     </form>
 
