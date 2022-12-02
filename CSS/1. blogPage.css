@@ -18,3 +18,34 @@ h1:hover{
 p.n{
     color: blue;
 }
+
+#div1{
+    height: 4rem;
+    width: 6rem;
+     background-color: red;
+    /*background-color: #393a7b;
+    background-color: rgb(118, 22, 207);
+    background-color: rgba(118, 22, 207,1);
+    background-color: hsl(hue, saturation, lightness);
+    background-color: hsla(hue, saturation, lightness, alpha); */
+    
+    /* border-width: top/bottom left/right;
+    border-width: top left/right bottom;
+    border-width: top left bottom right; */
+    border-width: 3px ;
+    border-style: solid;
+    border-color: green;
+
+    border: 3px solid green;
+    border-radius: 40px;
+
+}
+
+#div2{
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+}
+html{
+    font-size: 20px;
+}
