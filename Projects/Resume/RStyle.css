@@ -1,0 +1,218 @@
+/* make all the margin to 0 in body tag */
+body{
+    margin: 0px;
+}
+
+
+ /* for back image */
+#body-header{
+    height: 65vh;
+    /* opacity: 0.8; */
+    background-image: url("mfiles/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ............................................................ */
+/* Navigation Bar */
+.Hlist{
+    list-style:none;
+    margin: 0px;
+    padding-left:0px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+.Hlist li{
+    display: inline-block;
+    margin: 20px 30px 30px 0px;
+    /* margin: top right bottom left */
+    
+}
+
+.Hlist li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.Hlist li a:hover{
+    /* text-decoration: underline;  for this 
+    i can also use boder as it ook nicer then underline */
+    border-bottom: 2px solid #FB0A0A;
+    color:#FB0A0A;
+
+    transition:color 0.5s, border-bottom 1s;
+    
+}
+
+/* General class for making txt center */
+.text-center{
+    text-align: center;
+}
+
+/* ............................................................ */
+/* for Name */
+
+#name{
+    font-size: 60px;
+    margin-top: 140px;
+    margin-left: 470px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 12px;
+}
+
+
+/* ............................................................. */
+/* for social icon */
+#icon{
+    margin-left: 496px;
+}
+.ilist{
+    list-style:none;
+    text-align: center;
+}
+
+.ilist li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 100px;
+    padding-top: 40px;
+}
+
+.ilist li a{
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+}
+
+.ilist li a:hover{
+    color: rgb(0, 162, 255);
+}
+.ilist li a i:hover{
+     
+    /* box-shadow: h-offset v-offset blur spred color; */
+    box-shadow:0px 0px 6px 4px rgba(217,212,200,0.8);
+    padding: 10px;
+    border: 1px solid rgb(217,212,200);
+    border-radius: 50%;
+}
+
+/* ...................................................... */
+
+/* about and my photo */
+#about{
+    position: relative;
+    /* to make my image hovver over th back ground image */
+}
+#my-image {
+    width: fit-content;
+    margin-left: 39%;
+    margin-top: -60px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 8px rgb(217 212 200 / 80%);
+    border: 4px solid rgb(217,212,200);
+}
+#my-image img{
+    border-radius: 300px;
+}
+#about-me{
+   width: 50%;
+   margin-top: 20px;
+   margin-left: 370px;
+   text-align: justify;
+}
+
+/* .............................................. */
+/* making all section flex */
+main section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* technical-skills section */
+
+#technical-skills{
+    width: 100%;
+    height: 24rem;
+    margin-top: 40px;
+    display: flex;
+   
+    background-color: rgb(238, 238, 238);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#skill-icon{
+    margin-top: 20px;
+}
+#skill-icon i{
+    margin: 5px;
+    color: rgb(31, 31, 122);
+    font-size: xx-large;
+}
+#skill-icon i span{
+    display: ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#skill-index{
+    width: 33%;
+    height: 70%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+#skill-index .skill-progress{
+    width: 120px;
+    height: fit-content;
+    /* margin-top: 20px; */
+    font-size: large;
+    height: fit-content;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 0.8rem;
+}
+.n{
+    border-radius: 0.8rem;
+    padding-left: 5px;
+}
+.n span{
+    color: white;    
+}
+.eighty{
+    width: 80%;
+    background-color: rgb(100, 116, 15);
+}
+
+.fourty{
+    width: 70%;
+    background-color: goldenrod;
+}
+
+.eightyf{
+    width: 85%;
+    background-color: rgb(19, 103, 109);
+}
+.seventy{
+    width: 70%;
+    background-color: rgb(20, 170, 230);
+}
+.seventyn{
+    width: 70%;
+    background-color: rgb(32, 218, 72);
+}
+.sixty{
+    width: 60%;
+    background-color: rgb(255, 20, 177);
+}
+.seventyf{
+    width: 75%;
+    background-color: rgb(214, 16, 82);
+}
+.ninty{
+    width: 90%;
+    background-color: rgb(51, 0, 235);
+}
