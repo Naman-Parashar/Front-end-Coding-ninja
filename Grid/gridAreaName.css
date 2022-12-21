@@ -5,7 +5,7 @@
     background-color:lightcyan;
     display:grid;
     grid-template-columns:250px 250px 250px ;
-    grid-template-rows:100px 100px 100px 100px 110px 100px;
+    grid-template-rows:100px 100px 100px 100px 11 0px 100px;
     grid-gap:20px 20px;
     grid-template-areas: "header header header"
                           "menue menue menue"
