@@ -1,0 +1,37 @@
+.d{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aquamarine;
+    /* border: 2px solid red; */
+    transition: 1s ease-in-out;
+    /* transation : to-which-porperty  time  mode  delay */
+
+    /* transition: 1s steps(4,end);     now the animation will happen in 4 steps
+     till end it's a timing function */  
+
+
+
+}
+
+.d:hover{
+    transform:  scale(1.5) translate(150px);
+}
+
+
+.d2{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.d2:hover{
+    transform:  translate(100px 100px) rotate(90deg);
+    border-radius: 50%;
+}

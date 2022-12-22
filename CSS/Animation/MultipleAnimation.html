@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: aquamarine;
+            /* animation: changeShape 1s ease-in-out infinite alternate; */
+            /* animation: rotate 1s ease-in-out infinite alternate; */
+            /* animation: size 1s ease-in-out infinite alternate; */
+
+            animation-name: rotate,size,changeShape;
+            animation-duration: 0.8s, .8s , .8s;
+            animation-iteration-count: infinite ,infinite , infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes rotate {
+            from {
+               transform: rotate(0ded);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes changeShape {
+            from {
+                border-radius: 0%;
+            }
+
+            25% {
+                border-radius: 15.5%;
+            }
+
+            50% {
+                border-radius: 25%;
+            }
+
+            to {
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes size {
+            from{
+                height: 200px;
+                width: 200px;
+            }
+            to{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="div1">
+
+    </div>
+</body>
+
+</html>
