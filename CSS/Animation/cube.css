@@ -1,0 +1,35 @@
+.cube{
+    height:200px;
+    width: 200px;
+
+    position: relative;
+    margin: 100px;
+    border: 2px solid yellow;
+    
+    transition: all 1s;
+    transform-style: preserve-3d;  /* to preseve 3d */
+    perspective: 1000px;
+    transform: rotateX(25deg) rotateY(-25deg);
+    /* like the depth from we are viewing screen */
+}
+
+.face{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border: 2px solid red;
+}
+
+.one{
+    background-color: skyblue;
+}
+/* .one:hover{
+    transform: rotateX(40deg) rotateY(40deg);
+} */
+
+.second{
+    background-color: orange; 
+    transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+}
