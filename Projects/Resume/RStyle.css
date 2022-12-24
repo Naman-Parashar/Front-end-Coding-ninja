@@ -219,3 +219,73 @@ main section{
     width: 90%;
     background-color: rgb(51, 0, 235);
 }
+
+/* Experience Section */
+.timeline{
+    position: relative;
+    width: 75%;
+    margin-left: 12%;
+    border: 2px solid red;
+}
+
+.time-line-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid green;
+}
+
+/*  to make alternate box right we selet
+all even child */
+.time-line-box:nth-child(2n){
+    left: 53%;
+}
+
+/* DOTS ON TTMELINE */
+.time-line-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -12%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: lightslategray;
+    z-index: 1;
+
+}
+
+
+.time-line-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color:  lightslategray;
+    z-index: 1;
+}
+
+
+
+
+.timeline-divider{
+    position: absolute;
+    width: 0px;
+    height: 73%;
+    border: 1px dotted lightblue;
+    top: 10%;
+    left: 50%;
+}
+.plane{
+    position: sticky;
+    top: 10%;
+    transform: rotate(90deg);
+    color: rgba(82, 69, 107, 0.904);
+    z-index: 2;
+    font-size: x-large;
+}
