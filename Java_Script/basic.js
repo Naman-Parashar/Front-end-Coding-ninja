@@ -17,15 +17,15 @@ for(; ; ){
 }
 
 
-alert("Alert box")
+// alert("Alert box")
 
-var b = confirm("Do you want this")
-if(b){
-    document.write("You Press ok <br/>")
-}
-else{
-    document.write("You Press cancel<br/>")
-}
+// var b = confirm("Do you want this")
+// if(b){
+//     document.write("You Press ok <br/>")
+// }
+// else{
+//     document.write("You Press cancel<br/>")
+// }
 
 // var n = prompt("Enter your Name<br/>")
 // if(n != null && n.length > 0){
@@ -34,5 +34,24 @@ else{
 
 document.write(eval("2+5+5"))
 document.write(parseInt("15VRV"))
+document.write("<br/><br/><br/>")
+
+// var t =setTimeout("sumf(25,25)",2000)
+
+// function sumf( a , b){
+//     document.write(a+b)
+// }
+// clearTimeout(t)
+
+    //     functions
+// function show(){
+//     alert("this is a alert message")
+// }
+
+// function show(value){
+//     alert(value)
+// }
+
+    
 
 // ................................................................
