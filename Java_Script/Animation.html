@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in JS</title>
+
+    <script>
+
+        var imgobj = null
+        var animation 
+
+        function init() {
+            imgobj = document.getElementById('myImage')
+            imgobj.style.position='relative'
+            imgobj.style.left= '0px'
+        }
+
+        function move(){
+            imgobj.style.left = parseInt(imgobj.style.left) + 10 +'px'
+            animate = setTimeout(move,200)
+            if(imgobj.style.left == '880px'){
+                imgobj.style.left = '0px'    
+            }
+        }
+
+        function stop(){
+            clearTimeout(animate)
+            imgobj.style.left = '0px'
+        }
+        window.onload = init
+    </script>
+</head>
+<body>
+    
+    <form>
+        <img src="1.jpg" id="myImage" alt="img" width="40%" height="40%">
+        <p>click Start and stop button:</p>
+        <input type="button" value="start" onclick="move()">
+        <input type="button" value="stop" onclick="stop()">
+    </form>
+</body>
+</html>

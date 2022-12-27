@@ -52,6 +52,10 @@ document.write("<br/><br/><br/>")
 //     alert(value)
 // }
 
+
+function show(){
+    var t = setInterval("alert('1 second')",1000)
+}
     
 
 // ................................................................
