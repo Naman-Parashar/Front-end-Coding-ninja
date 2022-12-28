@@ -57,5 +57,21 @@ function show(){
     var t = setInterval("alert('1 second')",1000)
 }
     
+// function emp(name , sal){
+//     this.name = name
+//     this.sal = sal
+// }
+
+// var e = new emp('naman',10000000)
+// document.write(e.name+"    "+e.sal)
+// var s = "nsmsn"
+
+var a1 = ['m','t','w','h','f']
+var a2 = [1,2,3,4,5]
+
+var x = a1.join(a2)
+document.write(x)
+
+// alert("alert")
 
 // ................................................................
