@@ -14,28 +14,45 @@
 </head>
 
 <body>
-<!-- main cointainer that cointain all content -->
+  <!-- main cointainer that cointain all content -->
   <main id="cointainer">
 
     <!--1. Nav Bar using BootStrap -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img id="nav-icon" src="images/NavBar/icon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-option">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item" id="notification-icon">
-              <i class="fa-solid fa-bell"></i>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">New Songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">old songs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">My Music</a>
             </li>
           </ul>
+          <div class="nav-item" id="notification-icon">
+            <i class="fa-solid fa-bell" style="padding-right:5px ;"></i><span
+              style="padding-right: 10px;">Notification</span>
+          </div>
+
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -44,19 +61,128 @@
 
     <!-- 2. home screen recomendation  -->
 
-    <div>
-      <div id="banner"></div>
+    <div id="banner-container">
+
+      <div id="banner">
+
+        <div id="crousel">
+          <div class="crousel-img ">
+            <figure>
+              <img src="images/crousel/carousel3.jpg" id="img1" alt="Light Mood">
+            </figure>
+          </div>
+          <div class="crousel-img">
+            <figure>
+              <img src="images/crousel/carousel2.jpg" id="img2" alt="POP Song">
+            </figure>
+          </div>
+          <div class="crousel-img">
+            <figure>
+              <img src="images/crousel/carousel1.jpg" id="img3" alt="Party Song">
+            </figure>
+          </div>
+        </div>
+
+        <h2>Latest Release</h2>
+        <div id="latest-release">
+          <div id="box1" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/DaBaby.jpg" alt="">
+            </div>
+            <div class="song-description">
+              <h3>ROCKSTAR </h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+          <div id="box2" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/falling.jpg" alt="">
+            </div>
+            <div class="song-description">
+              <h3>Falling </h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+          <div id="box3" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/havana.jpg" alt="">
+            </div>
+            <div class="song-description">
+              <h3>Blinding Lights</h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+          <div id="box4" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/shit.png" alt="">
+            </div>
+            <div class="song-description">
+              <h3>WAP</h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+          <div id="box5" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/sorry.jpg" alt="">
+            </div>
+            <div class="song-description">
+              <h3>Sorry </h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+          <div id="box6" class="box">
+            <div class="song-image">
+              <img src="images/Latest Release/willow.jpeg" alt="">
+            </div>
+            <div class="song-description">
+              <h3>Willow </h3>
+              <p>Dec,2020</p>
+            </div>
+            <div class="song-option">
+              <button style="border-style: none; background-color:inherit;"> <i
+                  class="fa-solid fa-ellipsis"></i></button>
+              <p>3:15</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Top Artists</h2>
+        <div class="artists">
+          
+        </div>
+      </div>
 
       <div id="queue"></div>
-
-      <div id="resent-Played"></div>
-
-      div#s
 
     </div>
   </main>
 
-  
+
 
 </body>
 
