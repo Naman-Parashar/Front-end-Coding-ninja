@@ -1,3 +1,4 @@
+/* global classes */
 *{
     margin: 0px;
     padding: 0px;
@@ -9,6 +10,11 @@ background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-2
 background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.btn-prop{
+    border-style: none; 
+    background-color:inherit;
+}
+
 /* Navigation bar */
 #nav-icon{
     width: 30px;
@@ -45,7 +51,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 #banner-container{
     width: 95%;
     height: auto;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -54,19 +60,13 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
 #banner{
     width: 75%;
     height: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
-#queue{
-    width:25%;
-    height: 100vh;
-    border: 4px solid green;
-}
-
 /* three crousel images */
 #crousel{
     width: 95%;
     height: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -101,10 +101,11 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
     height: auto;
     margin: auto;
     margin-top: 2vh;
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     display: grid;
     grid-template-columns: 45% 45%;
     justify-content: space-between; 
+    grid-row-gap: 2rem;
 }
 .box{
     height: 17vh;
@@ -131,3 +132,192 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, F
     border: 2px solid rgb(120, 166, 182);
     border-radius: 5px;
 }
+
+/* Top Artists */
+.top-artists{
+    width: 98%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content min-content;
+    grid-row-gap: 30px;
+    grid-column-gap:140px;
+  }
+ .top-artists figure{
+  margin: 0;
+    /* border: 3px solid red; */
+    /* padding-left: 6px; */
+    display:inline-flex;
+    flex-direction: column;
+  }
+ .top-artists figure figcaption{
+    font-size: 15px;
+    margin: auto;
+  }
+  .artists{
+    width: 9rem;
+    height: 9rem;
+    /* border: 3px solid goldenrod; */
+    background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .artists img:hover{
+    opacity: 0.5;
+  }
+
+  #artists1 img{
+    position: relative;
+     top: -3px;
+    left: -6px; 
+  }
+
+  #artists2 img{
+    position: relative;
+    top: -3px;
+    left: -10px;
+  }
+
+  
+  #artists3 img{
+    position: relative;
+    top: -3px;
+    left: -10px;
+  }
+
+  #artists4 img{
+    position: relative;
+    left: -5px;
+  }
+
+  #artists7 img{
+    position: relative;
+    left: -4px;
+  }
+
+/*  queue */
+#queue{
+    width:25%;
+    height: 100vh;
+    /* border: 4px solid green; */
+    overflow: scroll;
+}
+
+.q-heading{
+    width: 100%;
+    height: fit-content;
+    display:flex; 
+    justify-content: space-between;
+
+}
+.q-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* overflow: scroll; */
+}
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ #queue::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #queue {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.q-box{
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.q-box img{
+    width:6vw;
+    height: 8vh;
+    /* margin-top: 0.6vh;
+    margin-left: 0.2vw; */
+    border-radius: 5px;
+}
+.q-box .song-description{
+    margin: auto;
+}
+.q-box .song-option{
+    margin: auto;
+    margin-right: 10px;
+}
+.q-box:hover{
+    transform: scale(1.2);
+    border-bottom: 1px solid rgb(120, 166, 182);
+    border-radius: 25px;
+}
+/* music theam */
+.music-theam{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid rgb(120, 166, 182); */
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.theam{
+    width: 18rem;
+    /* border: 1px solid rgb(120, 166, 182); */
+    border-radius: 5px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.theam img{
+    width:100%;
+    /* display: block; */
+    opacity: 0.5;
+}
+.theam h5{
+    /* z-index: 2; */
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: #FFFFFF;
+    font-size: xx-large;
+}
+.theam img:hover{
+    transform: scale(1.5);
+    transition: transform ease-in-out 1s;
+    opacity: 1;
+    transition: transform ease-in-out 1s;
+}
+
+
+/* Hindi Latest and English Latest */
+.he-latest{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.hl-box{
+    width: 10rem;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+.hl-image figure img{
+    width:10rem;
+}
+
+.hl-image figure:hover{
+    transform: scale(1.05);
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 8px rgba(186,172,172,1);
+-webkit-box-shadow: 0px 0px 5px 8px rgba(186,172,172,1);
+-moz-box-shadow: 0px 0px 5px 8px rgba(186,172,172,1);}
+
