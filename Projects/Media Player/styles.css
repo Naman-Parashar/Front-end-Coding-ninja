@@ -345,6 +345,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-shrink: 2;
 }
 
 .hl-box {

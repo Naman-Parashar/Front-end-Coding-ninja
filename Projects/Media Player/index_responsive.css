@@ -1,0 +1,34 @@
+@media  (max-width: 1320px) {
+    .top-artists{
+        grid-template-columns: min-content min-content min-content min-content;
+    }
+}
+
+@media  (max-width: 1150px){
+    #banner-container{
+        display: block;
+    }
+}
+
+@media  (max-width: 1030px) {
+    .top-artists{
+        grid-template-columns: min-content min-content min-content;
+    }
+}
+@media  (max-width: 1000px){
+    .he-latest{
+        display: block;
+    }
+}
+
+@media  (max-width: 880px){
+    #latest-release{
+        grid-template-columns:  100%;
+    }
+}
+
+@media  (max-width: 750px) {
+    .top-artists{
+        grid-template-columns: min-content min-content;
+    }
+}
