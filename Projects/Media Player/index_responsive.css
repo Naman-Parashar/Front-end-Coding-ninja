@@ -20,7 +20,11 @@
         display: block;
     }
 }
-
+@media  (max-width: 1010px){
+    .q-box{
+        display: block;
+    }
+}
 @media  (max-width: 880px){
     #latest-release{
         grid-template-columns:  100%;
