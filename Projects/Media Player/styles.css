@@ -217,16 +217,37 @@ body {
     width: 25%;
     height: 100vh;
     overflow: scroll;
+    position: relative;
 }
-
+.q-options{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.q-options:target{
+    width: 8rem;
+    height: auto;
+    background-color:rgb(80, 79, 75) ;
+    margin-left: 60%;
+    border-radius: 10px;
+}
+.q-options a{
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
 .q-heading {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    padding-right:2rem;
 
 }
-
+.q-heading a {
+    text-decoration: none;
+    color: black;
+}
 .q-container {
     width: 100%;
     height: fit-content;

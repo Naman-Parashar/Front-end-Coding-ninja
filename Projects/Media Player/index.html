@@ -27,22 +27,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-option">
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">New Songs</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">New Songs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">old songs</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">old songs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">Album</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">Album</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">Podcast</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">Podcast</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-dark" aria-current="page" href="#">My Music</a>
+              <a class="nav-link active text-dark" aria-current="page" href="Single_Playlist_Screen.html">My Music</a>
             </li>
           </ul>
           <div class="nav-item" id="notification-icon">
@@ -431,13 +431,19 @@
       <!-- Playlist and queue section  -->
       <div id="queue">
 
+        
         <div class="q-heading">
           <h4>Playlist</h4>
           <button class="btn-prop">
-            <h5>Queue <i class="fa-solid fa-chevron-down"></i></h5>
+            <h5><a href="#q-op">Queue <i class="fa-solid fa-chevron-down"></i></a></h5>
           </button>
         </div>
 
+        <div class="q-options" id="q-op">
+          <a href="#">Add</a><br>
+          <a href="#">Remove</a><br>
+          <a href="#">Close</a>
+        </div>
         <!-- Container that contain song card -->
         <div class="q-container">
 
