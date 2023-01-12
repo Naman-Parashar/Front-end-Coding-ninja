@@ -18,11 +18,17 @@
 //       console.log("hii"); 
 //       ++i ; 
 //    }ile(i<5);
-var a = 10;
-console.log(typeof(a));
+// var a = 10;
+// console.log(typeof(a));
 // if( typeof(a) ) {
 //     console.log("true")
 // }
 // else {
 //     console.log("false")
 // }
+
+function multiply(a, b) {
+    return a*b;
+};
+
+console.log(multiply);

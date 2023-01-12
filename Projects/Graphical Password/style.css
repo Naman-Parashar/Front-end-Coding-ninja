@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* select image div */
+
+.select-img{
+    width: 95%;
+    height: 35vh;
+    background-color: gray;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.select-img .img{
+    width: 10rem;
+    height: 10rem;
+}
