@@ -267,3 +267,10 @@ console.log(propertyExists(obj,path));
 //     }
 
 // console.log(s+" "+typeof(s));
+// var i = document.getElementById('demo');
+// i.style.borderColor="green";
+
+// var c = document.querySelectorAll('.demo');
+// c.borderColor='blue';
+// c[1].innerText="Second Element of Class";
+
