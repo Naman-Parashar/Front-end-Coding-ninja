@@ -1,0 +1,30 @@
+#outer{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    
+}
+button{
+    margin: 30px;
+    margin-left: 28em;
+    font-size: x-large;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.rect{
+    width: 150px !important; 
+    height: 250px;
+}

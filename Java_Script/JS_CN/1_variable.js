@@ -227,7 +227,7 @@ let list = [4, 5, 6];
 // console.log(f.h)
 // console.log(f.j)
 
-function propertyExists(obj, path) {
+// function propertyExists(obj, path) {
     // // Write logic here
     // var s="" ;
     //   for(var x of path){
@@ -235,29 +235,29 @@ function propertyExists(obj, path) {
     //   }
     //   var a =get(obj,s);
     //   console.log(a);
-    if(getProp(obj,path)) return getProp(obj,path);
-    else return false;
-  }
-  function getProp (object, path) {
-    if (path.length === 1) return object[path[0]];
-       else if (path.length === 0) throw error;
-    else {
-       if (object[path[0]]) return getProp(object[path[0]], path.slice(1));
-       else {
-          object[path[0]] = {};
-          return getProp(object[path[0]], path.slice(1));
-       }
-    }
- }
+//     if(getProp(obj,path)) return getProp(obj,path);
+//     else return false;
+//   }
+//   function getProp (object, path) {
+//     if (path.length === 1) return object[path[0]];
+//        else if (path.length === 0) throw error;
+//     else {
+//        if (object[path[0]]) return getProp(object[path[0]], path.slice(1));
+//        else {
+//           object[path[0]] = {};
+//           return getProp(object[path[0]], path.slice(1));
+//        }
+//     }
+//  }
 
-var obj = {
-    "a":{
-        "b":"dadsa"
-    }
-};
+// var obj = {
+//     "a":{
+//         "b":"dadsa"
+//     }
+// };
 
-var path = ['a','b','c'];
-console.log(propertyExists(obj,path));
+// var path = ['a','b','c'];
+// console.log(propertyExists(obj,path));
 
 
 // var p = ['g','g'];
@@ -273,4 +273,5 @@ console.log(propertyExists(obj,path));
 // var c = document.querySelectorAll('.demo');
 // c.borderColor='blue';
 // c[1].innerText="Second Element of Class";
+
 

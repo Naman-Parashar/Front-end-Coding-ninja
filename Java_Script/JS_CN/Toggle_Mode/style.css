@@ -1,0 +1,28 @@
+#toggle-btn{
+    width: 8%;
+    height: 2rem;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid red;
+    background-color: azure !important;
+    border-radius: 40px;
+}
+#circle{
+    width: 33px;
+    height: 33px;
+    background-color: rgb(126, 81, 81);
+    border-radius: 50%;
+}
+h1{
+    text-align: center;
+}
+.on{
+    margin-left: auto;
+}
+
+.color{
+    background-color: black;
+}
+.h-color{
+    color: azure;
+}
