@@ -274,4 +274,59 @@ let list = [4, 5, 6];
 // c.borderColor='blue';
 // c[1].innerText="Second Element of Class";
 
+// function foo(a){
+//     a = 20;
+//     console.log(a);
+//     }
+//     foo(10);    
+//     console.log(a);
+// var a = 10;
+// console.log(a);
+// var a =20;
+// console.log(a);
 
+// var a = (function(){
+//     return typeof arguments;
+//  })();
+//  console.log(a);
+
+// var i = 10;
+
+// function outer(){
+//     var j = 20;
+//     console.log(i, j);
+
+// function inner(){
+//         var k = 30;
+//         console.log(j, k);
+//         k++;
+//     }
+//     inner();
+//     inner();    
+// }
+// outer();
+// t();
+// op is  10 20
+//        20 30
+
+// var a = (function(){
+//     return typeof arguments;
+//  })();
+//  console.log(a);
+// var add = (function ( ) {
+//     var counter = 0;
+//     return function ( ) {
+//          counter += 1; 
+//          return counter;
+//   }
+//   })();    
+//   console.log(add());
+//   console.log(add());
+//   console.log(add());
+
+for (var i = 0; i <=5; i++) {
+    setTimeout(function () {
+        console.log(i);
+    },1000)
+}
+console.log("After FOR loop completed :" + i);

@@ -133,7 +133,7 @@ main section{
 }
 /* technical-skills section */
 
-#technical-skills , #personal-skills{
+#skills , #personal-skills{
     width: 100%;
     height: 24rem;
     margin-top: 40px;
@@ -165,7 +165,7 @@ main section{
 }
 
 #skill-index .skill-progress{
-    width: 120px;
+    width: 120%;
     height: fit-content;
     /* margin-top: 20px; */
     font-size: large;
