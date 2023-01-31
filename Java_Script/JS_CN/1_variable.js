@@ -324,9 +324,197 @@ let list = [4, 5, 6];
 //   console.log(add());
 //   console.log(add());
 
-for (var i = 0; i <=5; i++) {
-    setTimeout(function () {
-        console.log(i);
-    },1000)
+// for (var i = 0; i <=5; i++) {
+//     setTimeout(function () {
+//         console.log(i);
+//     },1000)
+// }
+// console.log("After FOR loop completed :" + i);
+
+// console.log((function(x, f = () => x) {
+//     var x;
+//     var y = x;
+//     x = 2;
+//     return [x, y, f()];
+//   })(1));
+
+//   function cart() {
+//     let items = 0;
+//     return {
+//        addItem: function () {
+//             items++;
+//         },
+//         getItem: function () {
+//             return items;
+//         }
+//     };
+// }
+
+// const closure = cart();
+// closure.addItem();
+// closure.addItem();
+// closure.addItem();
+// console.log(closure.getItem());
+
+// function generateID(start) {
+//     // Write logic here
+//     var counter = start; 
+//   var a =  function () {
+//       console.log('A-2021_'+counter);
+//       counter ++;
+//     }
+//    return a;
+// }
+
+// var a = generateID(5);
+// a();
+// a();
+// a();
+// generateID(1);
+// generateID(1);
+
+// function makeCounter() {
+//     let count = 0;
+//     return function() {
+//       return count++;
+//     };
+//   }
+//   let counter1 = makeCounter();
+//   let counter2 = makeCounter();
+//   console.log( counter1() ); 
+//   console.log( counter1() ); 
+//   console.log( counter2() ); 
+
+// function makeArmy() {
+//     debugger;
+//     let shooters = [];
+//     let i = 0;
+//     while (i < 10) {
+//       let shooter = function() {
+//         console.log( i ); 
+//       };
+//       shooters.push(shooter);
+//       i++;
+//     }
+//     return shooters;
+//   }
+//   let army = makeArmy();
+//   army[0]();
+//   army[5]();
+
+// function makeArmy() {
+//     debugger;
+//     let shooters = [];
+//     for(let i = 0; i < 10; i++) {
+//       let shooter = function() {
+//         console.log( i );
+//       };
+//       shooters.push(shooter);
+//     }
+//     return shooters;    
+//   }
+//   let army = makeArmy();
+//   army[0]();
+//   army[5]();
+
+
+// let People = function(person, age) { 
+//     this.person = person; 
+//     this.age = age; 
+//     this.info = function() { 
+//         console.log(this);  
+//        setTimeout(() => {  
+//         console.log(this.person + " is " + this.age + " years old"); 
+//        }, 3000); 
+//     } 
+// }  
+// let person1 = new People('John', 21); 
+// person1.info();
+
+// var arguments = [1, 2, 3];
+// var arr = () => arguments[2];
+// console.log(arr());
+// function foo(n) {
+//     console.log(arguments[0]);
+//   var f = () => arguments[0] + n; 
+//   return f();
+// }
+// foo(3);  
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+// using new 
+// function vehicle(){
+//   console.log(this);
+// }
+// new vehicle();
+
+// Explisit bindings
+// const CN = {
+//   name: "Coding Ninjas"
+// };
+
+// function print(){
+//   console.log(this) ;
+// }
+
+// print.bind(CN)() ;
+
+// var joe = {
+//   name: "Joe",
+//   hello: function (){
+//      console.log("hi, I am " + this.name) ;
+//   }
+// }
+
+// var globalHello1 = joe.hello.bind(joe) ;
+// var globalHello2 = joe.hello ;
+// globalHello1();
+// globalHello2.bind(joe)();
+
+// var joe = {
+//   name: "Joe"
+// }; 
+
+// function print(){
+//   console.log(this);
+// }
+
+// print.apply(joe);
+
+// const billy = {
+//   name: "Billy Jol", 
+//   outer: function() {
+//        console.log(this);
+//      }     
+// };
+// new (billy.outer.bind(billy))();
+
+// const john = {
+//   name:  "John",
+//   greet: function(){
+//       console.log(  "Hello! My name is " + this.name) ;
+//   }
+// }
+
+// const CN = {
+// name: "Coding Ninjas",
+// printName: function(){
+//       console.log(this) ;
+//   }
+// };
+
+// var op1 = CN.printName.bind(john);
+// op1();
+
+// john.greet.call(CN);
+// CN.printName.call(john);
+
+function vehicle(numV , price){
+    this.numV = numV;
+    this.price = price;
 }
-console.log("After FOR loop completed :" + i);
+
+var vehicle1 = new vehicle(1, 50000);
