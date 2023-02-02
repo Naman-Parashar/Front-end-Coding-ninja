@@ -512,9 +512,232 @@ let list = [4, 5, 6];
 // john.greet.call(CN);
 // CN.printName.call(john);
 
-function vehicle(numV , price){
-    this.numV = numV;
-    this.price = price;
-}
+// function vehicle(numV , price){
+//     this.numV = numV;
+//     this.price = price;
+// }
 
-var vehicle1 = new vehicle(1, 50000);
+// var vehicle1 = new vehicle(1, 50000);
+
+// function Person(name) {
+//     this.name = name;
+//   }
+//   var p1 = new Person("Joy");
+//   var p2 = new Person("Julie");
+  
+//   Person.prototype.getName = function() { return this.name };
+  
+//   p1.getName = function() {return "John"};
+//   console.log(p1.getName() + " is friend with " + p2.getName());
+//   p2.getName = function() {return 'Jonson'};
+
+// function Student(id, name, club){
+//     this.id = id ;
+//     this.name = name ;
+//     this.club = club ;
+// }
+
+// Student.prototype.printDetails = function(){
+//     console.log(this.id, this.name, this.club);
+// }
+// var s1 = new Student(1, 'Raj', 'Cricket');
+// var s2 = new Student(2, 'Rohan', 'Dance');
+// var s3 = new Student(3, 'Rita', 'BasketBall');
+// var s4 = new Student(4, 'Reema', 'Music');
+
+// var arr = [s1,s2,s3,s4];
+
+// for (const c of arr) {
+//     c.printDetails();
+// }
+// const object1 = new Object();
+// object1.property1 = 42;
+// console.log(Object());
+
+// class Person {
+//     constructor(name) { this.name = name; }
+//  }
+//  console.log(typeof( Person));
+
+// class v {
+//     // constructor(name) { this.name = name; }
+
+//     print(){
+//         console.log(this.name);
+//     }
+// }
+
+// class c extends v{
+//     constructor(ndoor){
+//         super('naman');
+//         this.ndoor = ndoor;
+//         console.log(ndoor);
+//     }
+// }
+
+// var x = new c(5);
+// x.print();
+
+// var Person = class {
+//     constructor() {}
+//     sayHello() {
+//       return 'Hello!';
+//     }
+//   };
+//   var instance = new Person();
+//   console.log(instance.sayHello()+" "+Person.name);
+// "use strict"
+// function bike() {
+//     console.log(this.name);
+//     console.log(this);
+//    }
+//    var name = "Ninja";
+//    bike();
+
+// function Abc() {
+//     // "use strict"
+//     this.a = 25;
+//     return {a: 35, b: 44};
+//     }
+//     var obj = new Abc();
+//     console.log(obj.a, obj.b);
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     getname() {
+//         return this._name;
+//     }
+//     setname(value) {
+//         this._name = value;
+//     }
+//     }
+//     var person = new Person("James");
+//     console.log(person.getname());
+
+// var ninja = {
+//     name: 'Ninja',
+//     getName: function() {
+//         var name = this.name;
+//         return name;
+//       }
+//     };
+//     var funcName = function(snack, hobby) {
+//     console.log(this.getName() + ' loves ' + snack + ' and ' + hobby);
+//     };
+//     funcName.call(ninja,'sushi', 'algorithms'); 
+//     funcName.apply(ninja,['sushi', 'algorithms']);
+
+// function MyClass() {}
+
+// const obj1 = new MyClass();
+// const obj2 = MyClass();
+
+// console.log(obj1);
+// console.log(obj2);
+
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//  }
+  
+//  class Student extends Person {
+//     constructor(name,sec,rollno){
+//         super(name);
+//         this.sec = sec;
+//         this.rollNo = rollno;
+//     }
+//     getDetails(){
+//         return [this.name, this.sec, this.rollNo];
+//     }
+//  }
+
+//  class  Teacher extends Person {
+//     constructor(name ,teacherId , subject){
+//         super(name);
+//         this.teacherId = teacherId;
+//         this.subject = subject;
+//     }
+//     getDetails(){
+//         return [this.name, this.teacherId, this.subject];
+//     }
+//  }
+
+// var pr = new Promise((resolve,reject)=>{
+//     // resolve("done");
+// });
+
+// console.log(pr);
+// console.log(1);
+// setTimeout(function(){
+//     console.log(2);
+// },0)
+// console.log(3);]
+
+// function getData(){
+//     return Promise.resolve("Some Data");
+// }
+// async function abc(){
+//     const data = await getData();
+//     console.log(data);
+// }
+// abc();
+// console.log(3);
+
+// const promise1 = new Promise((resolve,reject) => { setTimeout(() => { resolve('a') }) })
+
+// const promise2 = new Promise((resolve,reject) => { resolve('b') })
+
+// const promise3 = new Promise((resolve,reject) => { setTimeout(() => { resolve('c') },10) })
+
+// Promise.all([promise1,promise2,promise3]) .then((msg) => { console.log(msg) })
+// x((a,b,c) => {
+//     return a+b+c
+//   },2,3,6)
+  
+//   function x(callback,a,b,c) {
+//     let str = ""
+//     setTimeout(() => {
+//       str += "x"
+//     });
+//     str += callback(a,b,c)
+//     console.log(str)
+//   }
+
+// const promise1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('a')
+//   })
+// })
+
+// const promise2 = new Promise((resolve,reject) => {
+//   resolve('b')
+// })
+
+// const promise3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('c')
+//   },10)
+// })
+
+
+// Promise.race([promise1,promise2,promise3])
+// .then((msg) => {
+//   console.log(msg)
+// })
+
+const delay = (time) => {
+  // Write the logic here
+  return new Promise((resolve,reject) => {
+    setTimeout(resolve , time);
+  })
+}
+ 
+let count = counter()
+
+count.start()
+setTimeout(() => {
+  count.stop()
+},6000)
