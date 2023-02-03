@@ -728,16 +728,21 @@ let list = [4, 5, 6];
 //   console.log(msg)
 // })
 
-const delay = (time) => {
-  // Write the logic here
-  return new Promise((resolve,reject) => {
-    setTimeout(resolve , time);
-  })
-}
+// const delay = (time) => {
+//   // Write the logic here
+//   return new Promise((resolve,reject) => {
+//     setTimeout(resolve , time);
+//   })
+// }
  
-let count = counter()
+// let count = counter()
 
-count.start()
-setTimeout(() => {
-  count.stop()
-},6000)
+// count.start()
+// setTimeout(() => {
+//   count.stop()
+// },6000)
+var greet = document.createElement("p");
+greet.innerHTML = `Hello ${name}`;
+var name = "Ninja";
+document.body.append(greet);
+document.body.append(`Nice to meet you, ${name}!`);
