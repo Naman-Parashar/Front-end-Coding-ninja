@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
 const port = 8000;
-
 const app = express();
+// const bodyParser = require('body-parser');
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'vews2')); 
+app.use(express.urlencoded());
+
 
 var contactList = [
     {
@@ -35,3 +38,30 @@ app.get('/', function(req, res){
         Contact_List : contactList
     });
 });
+
+let title = {
+    title : 'My Contact List for Practic'
+};
+app.get('/practic2', function(req, res){
+    return res.render('practic2', title);
+});
+
+
+// form
+
+app.post('/create-contact', function(req, res){
+    // return res.redirect('/practic2');
+    // console.log(req.body);
+
+    // contactList.push({
+    //     name: req.body.name,
+    //     phone: req.body.phone
+    // });
+
+     contactList.push(req.body);
+    // return res.redirect('/');
+    return res.redirect('back'); // return to where we come from
+});
+
+
+

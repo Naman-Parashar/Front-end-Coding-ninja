@@ -37,3 +37,24 @@ let title = {
 app.get('/practic', function(req, res){
     return res.render('practic', title);
 });
+
+
+// Middle ware 
+
+app.use(function(req, res, next){
+    console.log("Middle ware 1 is available");
+});
+// but our page will stuck in the middleware as we are not using NEXT.
+
+app.use(function(req, res, next){
+    console.log("Middle ware 1 is available");
+    next(); // GO to next function.
+});
+
+// middleware chaining
+
+app.use(function(req, res, next){
+    console.log("Middle ware 2 is available");
+    next();
+});
+
