@@ -14,6 +14,8 @@ app.listen(port , function(err){
     }
 
     console.log('Starting server');
+    console.log(__dirname);
+
 });
 // in node if we don't have a return page then it;s just load but in express it shows us it can't load anything.
 
