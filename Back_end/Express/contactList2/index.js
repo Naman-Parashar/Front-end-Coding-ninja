@@ -8,6 +8,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'vews2')); 
 app.use(express.urlencoded());
 
+app.use(express.static('Assets'));  // to access static files
 
 var contactList = [
     {
@@ -24,6 +25,8 @@ var contactList = [
     }
 ]; // an array of objects
 
+
+// without listen it will not work.
 app.listen(port , function(err){
     if(err) {
         console.log('Error in running the server',err);
@@ -63,5 +66,24 @@ app.post('/create-contact', function(req, res){
     return res.redirect('back'); // return to where we come from
 });
 
+app.get('/delete-contact/:phone', function(req, res){
+    console.log(req.params);
+    let phone = req.params.phone;
 
+    let contactIndex = contactList.findIndex(function(contact){
+        return contact.phone == phone;
+    });
+    console.log(contactIndex);
 
+    if (contactIndex != -1){
+        contactList.splice(contactIndex, 1); // remove only  contactIndex if i put 2 then remeove 2 contac from contactIndex
+    }
+
+    return res.redirect('back'); // return to where we came from
+});
+
+// or using queary params
+// app.get('/delete-contact/', function(req, res){
+//     console.log(req.query);
+//     let phone = req.query.phone;
+// });
