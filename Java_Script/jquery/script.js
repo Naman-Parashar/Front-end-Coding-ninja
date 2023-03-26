@@ -38,9 +38,42 @@ $(p2);  // without quotes
 //  change the CSS
 
 $('#para1').css('color','red');
-//   or
 
+// TOSELECT MULTIPLE PROPERTIES
 $('#para1').css({
     fontSize:'50px',
     color:'red'
+});
+
+
+$('div').width('100px');
+$('div').height('100px');
+$('div').css('background-color', 'red');
+
+// or
+$('div').css({
+    width:'100px',
+    height:'100px',
+    backgroundColor:'red'
+});
+// Event handling in JQuery
+
+$('div').click(function(){
+    alert('Clicked');
+});
+
+///    or
+$('div').on('click',function(){
+    alert('Clicked');
+});
+
+$('a').on('click',function(events){
+    events.preventDefault();
+    alert('A Clicked');
+});
+
+// the width of the container is increased by 10 px every time we click on it
+$('div').on('click',function(){
+    let element = $(this);
+    element.width(element.width()+10+"px");
 });

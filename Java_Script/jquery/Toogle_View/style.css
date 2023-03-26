@@ -1,0 +1,13 @@
+.textColor{
+    color: white;
+}
+.backColor{
+    background-color: black;
+}
+.divColor{
+    background-color: white;
+}
+
+.move-btn{
+    margin-left: 80%;
+}
