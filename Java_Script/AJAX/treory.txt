@@ -1,0 +1,37 @@
+AJAX = Asynchronous Javascript and XML
+
+earlier we use to send or recive data in form of XML but
+now we use JSON.
+
+HTTP ==> Hypertext transfer protocol(State less process ie server is 
+ not going to rember the client every request is independent of previous requests)
+
+step1 ==> client opens up connection with server
+step2 ==> client makes a request to server
+step3 ==> server will precess the request
+step4 ==> server will send the response
+step5 ==> client will close the connection.
+
+request in http are of many type but generally we use
+1 GET
+2 POST
+
+other 
+DELETE
+PUT
+PATCH
+
+response--
+200 successfull
+401
+404 etc..
+
+
+
+API ==> Application programming interface
+api is generally used as a meadian of communication
+between two  different applications.
+                            OR 
+as messenger. it differ from context
+
+JSON ==> Javascript Object Notation

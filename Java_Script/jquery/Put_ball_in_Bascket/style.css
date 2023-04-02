@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+}
+
+#box{
+    width: 93%;
+    min-height: 200px;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(195, 240, 240);
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    /* background-color: brown; */
+    border-radius: 50%;
+}
