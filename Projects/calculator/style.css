@@ -16,12 +16,21 @@
     border: 1px solid blue;
     background-color: rgb(227, 226, 226);
 }
+#display input{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    font-size: xx-large;
+}
 .buttons{
     width: 100%;
     height:80%;
     border: 1px solid rgb(32, 210, 195);
     display: grid;
     grid-template-columns:25% 25% 25% 25%;
+}
+.buttons div{
+    cursor: pointer;
 }
 .btn{
     height: 80px;
